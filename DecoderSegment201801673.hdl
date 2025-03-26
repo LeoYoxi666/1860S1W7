@@ -3,7 +3,7 @@ CHIP DecoderSegment201801673 {
     OUT c;
 
     PARTS:
-    
+
     Not(in=A, out=notA);
     Not(in=B, out=notB);
     Not(in=C, out=notC);
@@ -17,7 +17,7 @@ CHIP DecoderSegment201801673 {
     And(a=B, b=C, out=and3);
     
     And(a=notA, b=B, out=and4);
-    And(a=and5, b=D, out=and5);
+    And(a=and4, b=D, out=and5);
 
     And(a=A, b=notB, out=and6);
 
