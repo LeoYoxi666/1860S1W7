@@ -22,10 +22,13 @@ CHIP DecoderSegment201801673 {
     And(a=A, b=notB, out=and6);
 
     And(a=A, b=notD, out=and7);
+    
+    And(a=C, b=notD, out=and8);
 
     Or(a=and1, b=and2, out=or1);
     Or(a=and3, b=and5, out=or2);
     Or(a=and6, b=and7, out=or3);
     Or(a=or1, b=or2, out=or4);
-    Or(a=or3, b=or4, out=c); 
+    Or(a=or3, b=or4, out=or5); 
+    Or(a=or5, b=and8, out=c);
 }
